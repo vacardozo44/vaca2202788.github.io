@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Block Elements</title>
+    <style type="text/css">
+        .gallery {
+            text-transform: uppercase; color: crimson; }
+        div#pheader {
+            color: darkblue; }
+        div#pfooter {
+            color: darkorchid; }
+    </style>
+</head>
+<body>
+    <div id="pheader">
+        <p>El elemento &lt;div&gt; permite agrupar un conjunto de elementos juntos en un cuadro de nivel de bloque.  Por ejemplo, 
+            puede crear un elemento &lt;div&gt; para que contenga todos los elementos del encabezado del sitio (el logotipo y la
+            navegación), o puede crear un elemento &lt;div&gt; para que contenga información en bloques. </p>
+    </div> <!-- final del div pheader-->
+    <div id="pbody"> <p> En un navegador, el contenido del elemento &lt;div&gt; comenzará en una nueva linea, pero aparte de esto 
+        no hará ninguna diferencia en la presentación de la página. <span class="gallery"> Sin embargo, el uso de un atributo ID 
+        o Class en el elemento &lt;div&gt; significa que puede crear reglas de estilo CSS para indicar cuánto espacio debe ocupar
+        el elemento &lt;div&gt; en la pantalla y cambiar la apariencia de todos los elementos contenidos en él. </span> También 
+        puede facilitar el seguimiento del código si ha utilizado elementos &lt;div&gt; para contener cada sección de la página </p>
+    </div> <!-- final del div pbody-->
+
+    <div id="pfooter">
+        <p> Dado que puede haber varios otros elementos dentro de un elemento &lt;div&gt;, puede ser úti agregar un comentario después 
+            de la etiqueta &lt;div&gt; de cierre. Esto le permite ver claramente a que etiqueta de apertura se supone que corresponde.
+        </p>
+    </div> <!--Final del div pfooter-->
+    <br />
+    <a href="./tema9_ejemplo3.html"><b>Tema 9 - ejemplo 3</b></a>
+</body>
+</html>

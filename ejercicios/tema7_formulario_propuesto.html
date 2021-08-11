@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form>
+<H1>FORMATO HOJA DE VIDA PERSONAL </H1>
+<p align="right"> <a href= "../index.html"><b>INICIO MENU</b></a></p>
+<fieldset>
+    <legend><i><b>DATOS PERSONALES</b></i></legend> <br />
+    <i>
+        <label>NOMBRES: <input type="text" name="nombres" size="50"/></label> <br /><br />
+        <label>APELLIDOS: <input type="text" name="apellidos" size="50"></label><br /><br />
+        <label>DOCUMENTO: </label>
+        <input id="cedula" type="radio" name="identif" value="C">
+        <label for="cedula">Cedula</label>
+        <input id="tarjeta" type="radio" name="identif" value="T">
+        <label for="male">Tarjeta</label>
+        <input id="pasport" type="radio" name="identif" value="P">
+        <label for="passport">Pasaporte</label>
+        <label>Número</label><input type="text" name="identif" size="12"><br /><br />
+        <label>Teléfono Celular <input type="text" name="identif" size="12"></label>
+        <label>Teléfono fijo <input type="text" name="identif" size="12"><br /><br /> </label>
+    </i>
+</fieldset>
+<br />
+<fieldset style="color: rgb(22, 168, 173);">
+        <legend><b>NIVEL DE ESTUDIOS<b/></legend>
+        <p>Cual es su último nivel académico</p>
+            <input type="radio" name="estudios" value="primaria" /> Primaria
+            <input type="radio" name="estudios" value="secundaria" /> Secundaria
+            <input type="radio" name="estudios" value="Tecnico" /> Técnico
+            <input type="radio" name="estudios" value="Tecnologo" /> Tecnólogo
+            <input type="radio" name="estudios" value="Universitario" /> Universitario
+            <input type="radio" name="estudios" value="Especializado" /> Especializado
+            </p>
+            <label for="username">Fecha de Finalización</label>
+            <input type="date" name="depart" />
+            <input type="submit" value="Submit">    
+        <br />
+</fieldset>
+
+        <p >Sube el formato de la hoja de vida con sus soprotes de estudios
+            <br /> (El tamaño máximo del archivo pdf es 5 mb)
+        </p>
+
+            <input type="file" name="user-song" /><br />
+            <input type="submit" value="Upload"> <br />
+        <p>Indique - ¿ porque debería ser contratado para esta compañía?</p>
+            <textarea name="coments" cols="50" rows="4">Ingrese sus comentarios...</textarea>
+</form>
+</body>
+</html>

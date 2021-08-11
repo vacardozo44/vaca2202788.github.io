@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Input</title>
+</head>
+<body>
+    <div style="width: 700px;">
+        <h3>Declaración del formulario FORM</h3>
+        <p>Los elementos que componen un formulario deben encontrarse entre las etiquetas
+            &lt;Form&gt; y &lt;&#47;Form&gt;</p>
+        <p>A continuación, se situarán todas las etiquetas que generan los botones, entradas de texto, casillas
+            de verificación, listas, etc. </p>   
+        <p>Veamos los atriburos de la etiqueta &lt;Form&gt;</p>
+        <p><b>ACTION</b> Atributo que determina la acción que debe realizarse al pulsar el botón de ejecución</p>
+        <p><b>METHOD</b> Indica en método de transferencia de la información introducidad en el formulario.
+            Puede emplearse los métodos <b>GET</b> y <b>POST</b> </p>
+        
+        <form action="http://www.example.com/login.php">
+            <p>Username:
+                <input type="text" name="username" size="15" maxlength="30" />
+            </p>
+            <p>Password:
+                <input	type="password" name="password" size="15" maxlength="30" />
+            </p>
+        </div>
+
+            <p>¿Qué te pareció este trabajo?</p>
+            <textarea name="coments" cols="50" rows="4">Ingrese sus comentarios...</textarea>
+
+            <p>Por favor, seleccion su género de música favorita:
+                <br />
+                <input type="radio" name="genre" value="rock" checked="checked"/> rock
+                <input type="radio" name="genre" value="pop" /> pop
+                <input type="radio" name="genre" value="jazz" /> jazz
+            </p>
+
+            <p>Por favaor seleccione sus servicios de música favorita:
+                <br />
+                <input type="checkbox" name="service" value="itunes" checked="checked" /> itunes
+                <input type="checkbox" name="service" value="deezer" /> deezer
+                <input type="checkbox" name="service" value="spotify" /> Spotify
+            </p>
+            
+            <p> ¿En que dispositivo escuchas música?</p>
+            <select name="devices">
+                <option value="ipod">Ipod</option>
+                <option value="radio">Radio</option>
+                <option value="computer">Computer</option>
+            </select>
+
+            <p>¿Tocas alguno de los siguientes instrumentos?
+            <br />(Puede Seleccionar más de una opción manteniendo presionada la tecla control)
+            </p>
+            <select name="instruments" size="3" multiple="multiple">
+                <option value="guitar" selected="selected">Guitar</option>
+                <option value="drums" selected="selected">Drums</option>
+                <option value="keyboard" selected="selected">Keyboard</option>
+                <option value="bass">Bass</option>
+            </select>
+
+            <p>Sube tu canción en formato MP3</p>
+            <input type="file" name="user-song" /><br />
+            <input type="submit" value="Upload"
+            <br />
+            <p>Suscríbete a nuestra lista de correo electrónico</p>
+            <input type="text" name="email" />
+            <input type="submit" name="subscribe" value="Subscribe" />
+
+            <p>Suscríbete a nuestra lista de correo electrónico</p>
+            <input type="text" name="email" />
+            <input type="image" src="./imagenes/subscribe.jpg" width="100" height="30" />
+        
+        <br /><br />
+        <label>Edad: <input type="text" name="age " /></label>
+        <br />
+        <label>Genero:</label>
+        <input id="female" type="radio" name="gender" value="F">
+        <label for="female">Female</label>
+        <input id="male" type="radio" name="gender" value="M">
+        <label for="male">Male</label>
+       
+        <fieldset>
+            <legend>Datos de contacto</legend>
+            <label>Email: <br /><input type="text" name="email" /></label><br />
+            <label>Teléfono Móvil:<br /><input type="text" name="movil" /></label><br />
+            <label>Teléfono Fijo:<br /><input type="text" name="telephone" /></label>
+        </fieldset>
+        <br />
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required="required" /><br />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required="required" />
+        <input type="submit" value="submit" />
+
+        <br />
+        <label for="username">Fecha de salida</label>
+        <input type="date" name="depart" />
+        <input type="submit" value="Submit">
+    </form>
+    <hr />
+    <p align="right"><a href= "../index.html"><input type="submit" value="Menú Inicio"></a></p>
+</body>
+</html>

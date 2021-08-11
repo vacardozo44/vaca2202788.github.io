@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Video Sources</title>
+</head>
+<body>
+    <video poster="./imagenes/puppy.jpg" width="400" height="320" preload controls loop>
+        <source src="./video/puppy.mp4" type='video/puppy.mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+        <source src="./video/puppy.webm" type='video/webm;codecs="vp8, vorbis"' />
+    </video>
+
+    <p>Un video de un cachorro jugando en la nieve</p>
+    <p>La etiqueta video: Para especificar la ubicación del archivo que se reproducirá, puede usar el elemento &lt;source&gt; 
+        dentro del elemento &lt;video&gt;. (Esto debe reemplazar el atributo src en la etiqueta &lt;video&gt; de apertura.)
+        También puede utilizar varios elementos &lt;source&gt; para especificar que el video está disponible en diferentes 
+        formatos. (Debido a un error en el ipad, debe proporionar el video MP4 como el primer formato.  De lo contrario, puede
+        que no inicie.) </p>
+        <p><b>src: </b>este atributo especifica la ruta de acceso al video</p>
+        <p><b>type: </b>se debe utilizar este atributo para decirle al navegador qué formato es el video. De lo contrario, 
+        descargará parte del video para ver si puede reproducir el archivo (que tomará tiempo y ancho de banda). </p>
+        <p><b>codecs: </b>el códec que se usó para codificar el video se suministra dentro del atributo type. Tenga en cuenta
+        el uso de comillas simples, asi como comillas dobles en el atributo de tipo, cuando se suministra.</p>
+        <br />
+        <a href="./tema10_ejemplo3.html">Tema 10 - ejemplo 3</a>
+</body>
+</html>
